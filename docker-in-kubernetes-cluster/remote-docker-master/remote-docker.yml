@@ -1,0 +1,80 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: remote-docker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: remote-docker
+  template:
+    metadata:
+      labels:
+        app: remote-docker
+      annotations:
+        sidecar.istio.io/inject: "false"
+    spec:
+      containers:
+        - name: docker-cli
+          image: hpcregistry.hpc.ford.com/jpostel1/docker-cli
+          resources:
+            limits:
+              cpu: 1
+              memory: 20Gi
+              ephemeral-storage: 20Gi
+            requests:
+              cpu: 1
+              memory: 1Gi
+              ephemeral-storage: 20Gi
+          imagePullPolicy: Always
+          #permissions issues symlink vs secret files
+          #ugly workaround from: https://stackoverflow.com/questions/49945437/changing-default-file-owner-and-group-owner-of-kubernetes-secrets-files-mounted/50426726#50426726:w
+          #awaiting feature: github.com/kubernetes/kubernetes/issues/81089
+          command: ["/bin/bash", "-c"]
+          args: ["mkdir /root/.ssh && cp /root/tmp_ssh/* /root/.ssh && chmod 644 /root/.ssh/id_rsa.pub && chmod 600 /root/.ssh/id_rsa && sleep 600000"]
+          env:
+          - name: DOCKER_HOST
+            value: tcp://localhost:2375
+          volumeMounts:
+            - name: registry-credentials
+              readOnly: false
+              mountPath: /root/.docker
+            - name: ssh-secret
+              readOnly: true
+              mountPath: /root/tmp_ssh
+        - name: dind
+          image: hpcregistry.hpc.ford.com/jpostel1/docker:18.09.7-dind
+          resources:
+            limits:
+              cpu: 4
+              memory: 20Gi
+              ephemeral-storage: 20Gi
+            requests:
+              cpu: 1
+              memory: 1Gi
+              ephemeral-storage: 20Gi
+          securityContext:
+            privileged: true
+          env:
+          - name: no_proxy
+            value: "localhost,127.0.0.1,.ford.com"
+          - name: https_proxy
+            value: "http://internet.ford.com:83"
+          - name: http_proxy
+            value: "http://internet.ford.com:83"
+          - name: ftp_proxy
+            value: "http://internet.ford.com:83"
+          volumeMounts:
+            - name: dind-storage
+              mountPath: /var/lib/docker
+      volumes:
+        - name: dind-storage
+          emptyDir: {}
+        - name: registry-credentials
+          secret:
+            secretName: docker-registry-credentials-yaml
+        - name: ssh-secret 
+          secret:
+            secretName: ssh-keys
+      imagePullSecrets:
+      - name: docker-registry-credentials
