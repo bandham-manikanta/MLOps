@@ -1,0 +1,67 @@
+[2024-06-30T20:03:17.730+0000] {processor.py:161} INFO - Started process (PID=51) to work on /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:03:17.732+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/PySparkETL.py for tasks to queue
+[2024-06-30T20:03:17.736+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:03:17.736+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:03:17.792+0000] {processor.py:840} INFO - DAG(s) 'SparkETL' retrieved from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:03:18.167+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:03:18.166+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:SparkETL
+[2024-06-30T20:03:18.186+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:03:18.185+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:SparkETL
+[2024-06-30T20:03:18.195+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:03:18.195+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:SparkETL
+[2024-06-30T20:03:18.197+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:03:18.196+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-30T20:03:18.540+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:03:18.540+0000] {dag.py:3118} INFO - Creating ORM DAG for SparkETL
+[2024-06-30T20:03:18.553+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:03:18.553+0000] {dag.py:3954} INFO - Setting next_dagrun for SparkETL to 2024-06-28 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-30T20:03:18.580+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/PySparkETL.py took 0.861 seconds
+[2024-06-30T20:03:48.666+0000] {processor.py:161} INFO - Started process (PID=104) to work on /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:03:48.667+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/PySparkETL.py for tasks to queue
+[2024-06-30T20:03:48.670+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:03:48.669+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:03:48.685+0000] {processor.py:840} INFO - DAG(s) 'SparkETL' retrieved from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:03:48.706+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:03:48.706+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-30T20:03:48.727+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:03:48.727+0000] {dag.py:3954} INFO - Setting next_dagrun for SparkETL to 2024-06-28 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-30T20:03:48.746+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/PySparkETL.py took 0.086 seconds
+[2024-06-30T20:04:18.937+0000] {processor.py:161} INFO - Started process (PID=157) to work on /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:04:18.938+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/PySparkETL.py for tasks to queue
+[2024-06-30T20:04:18.941+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:04:18.940+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:04:18.959+0000] {processor.py:840} INFO - DAG(s) 'SparkETL' retrieved from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:04:18.979+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:04:18.978+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-30T20:04:18.998+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:04:18.998+0000] {dag.py:3954} INFO - Setting next_dagrun for SparkETL to 2024-06-28 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-30T20:04:19.017+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/PySparkETL.py took 0.086 seconds
+[2024-06-30T20:04:49.194+0000] {processor.py:161} INFO - Started process (PID=210) to work on /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:04:49.195+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/PySparkETL.py for tasks to queue
+[2024-06-30T20:04:49.198+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:04:49.197+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:04:49.214+0000] {processor.py:840} INFO - DAG(s) 'SparkETL' retrieved from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:04:49.238+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:04:49.237+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-30T20:04:49.257+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:04:49.256+0000] {dag.py:3954} INFO - Setting next_dagrun for SparkETL to 2024-06-28 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-30T20:04:49.274+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/PySparkETL.py took 0.086 seconds
+[2024-06-30T20:05:19.355+0000] {processor.py:161} INFO - Started process (PID=263) to work on /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:05:19.356+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/PySparkETL.py for tasks to queue
+[2024-06-30T20:05:19.361+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:05:19.360+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:05:19.383+0000] {processor.py:840} INFO - DAG(s) 'SparkETL' retrieved from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:05:19.421+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:05:19.420+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-30T20:05:19.467+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:05:19.467+0000] {dag.py:3954} INFO - Setting next_dagrun for SparkETL to 2024-06-28 00:00:00+00:00, run_after=2024-06-28 00:00:00+00:00
+[2024-06-30T20:05:19.510+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/PySparkETL.py took 0.165 seconds
+[2024-06-30T20:05:49.972+0000] {processor.py:161} INFO - Started process (PID=320) to work on /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:05:49.985+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/PySparkETL.py for tasks to queue
+[2024-06-30T20:05:50.011+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:05:50.008+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:05:50.184+0000] {processor.py:840} INFO - DAG(s) 'SparkETL' retrieved from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:05:50.457+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:05:50.454+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-30T20:05:50.769+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:05:50.767+0000] {dag.py:3954} INFO - Setting next_dagrun for SparkETL to None, run_after=None
+[2024-06-30T20:05:51.039+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/PySparkETL.py took 1.136 seconds
+[2024-06-30T20:06:21.789+0000] {processor.py:161} INFO - Started process (PID=373) to work on /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:06:21.791+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/PySparkETL.py for tasks to queue
+[2024-06-30T20:06:21.794+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:06:21.793+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:06:21.828+0000] {processor.py:840} INFO - DAG(s) 'SparkETL' retrieved from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:06:21.863+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:06:21.862+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-30T20:06:21.898+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:06:21.897+0000] {dag.py:3954} INFO - Setting next_dagrun for SparkETL to None, run_after=None
+[2024-06-30T20:06:21.937+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/PySparkETL.py took 0.160 seconds
+[2024-06-30T20:06:52.675+0000] {processor.py:161} INFO - Started process (PID=426) to work on /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:06:52.677+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/PySparkETL.py for tasks to queue
+[2024-06-30T20:06:52.682+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:06:52.681+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:06:52.720+0000] {processor.py:840} INFO - DAG(s) 'SparkETL' retrieved from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:06:52.760+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:06:52.759+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-30T20:06:52.801+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:06:52.801+0000] {dag.py:3954} INFO - Setting next_dagrun for SparkETL to None, run_after=None
+[2024-06-30T20:06:52.834+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/PySparkETL.py took 0.174 seconds
+[2024-06-30T20:07:22.953+0000] {processor.py:161} INFO - Started process (PID=479) to work on /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:07:22.959+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/PySparkETL.py for tasks to queue
+[2024-06-30T20:07:22.972+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:07:22.970+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:07:23.019+0000] {processor.py:840} INFO - DAG(s) 'SparkETL' retrieved from /opt/airflow/dags/PySparkETL.py
+[2024-06-30T20:07:23.081+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:07:23.080+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-30T20:07:23.127+0000] {logging_mixin.py:188} INFO - [2024-06-30T20:07:23.126+0000] {dag.py:3954} INFO - Setting next_dagrun for SparkETL to None, run_after=None
+[2024-06-30T20:07:23.202+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/PySparkETL.py took 0.271 seconds
