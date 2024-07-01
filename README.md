@@ -15,3 +15,5 @@ Key Points:
     - 5. Create new (+) > Give connection name, choose connection type as Google Cloud and Enter KeyFile Path as "/opt/airflow/secrets/file_name.json"
     - 6. Submit.
 
+Resources:
+ - https://ilhamaulanap.medium.com/data-lake-with-pyspark-through-dataproc-gcp-using-airflow-d3d6517f8168
